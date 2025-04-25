@@ -1,8 +1,7 @@
 /// <reference path="./crud.d.ts" />
 
 import { RowID, RowElement } from './interface';
-// Using require instead of import for the crud.js file
-const CRUD = require('./crud.js');
+import * as CRUD from './crud';
 
 // Create a row element
 const row: RowElement = {
