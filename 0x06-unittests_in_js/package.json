@@ -1,16 +1,14 @@
 {
   "name": "task_0",
   "version": "1.0.0",
-  "description": "Basic test with Mocha and Node assertion library",
-  "main": "0-calcul.js",
+  "description": "Unit tests in JS with Mocha",
+  "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "devDependencies": {
-    "mocha": "^6.2.3",
-    "chai": "^4.2.0",
-    "sinon": "^7.5.0"
+    "test": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
 }
