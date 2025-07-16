@@ -1,5 +1,5 @@
-const Utils = {
-  calculateNumber(type, a, b) {
+class Utils {
+  static calculateNumber(type, a, b) {
     const roundedA = Math.round(a);
     const roundedB = Math.round(b);
 
@@ -14,9 +14,9 @@ const Utils = {
         }
         return roundedA / roundedB;
       default:
-        return 'Error';
+        throw new Error('Invalid type');
     }
   }
-};
+}
 
 module.exports = Utils;
