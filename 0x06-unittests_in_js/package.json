@@ -1,12 +1,19 @@
 {
   "name": "task_0",
   "version": "1.0.0",
-  "description": "",
+  "description": "Javascript",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
   "devDependencies": {
-    "mocha": "^6.2.2"
-  }
+    "chai": "^5.2.1",
+    "express": "^5.1.0",
+    "mocha": "^6.2.3",
+    "request": "^2.88.2",
+    "sinon": "^21.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
