@@ -9,10 +9,13 @@ class StudentsController {
         let responseText = 'This is the list of our students';
 
         // Sort fields alphabetically (case insensitive)
-        const sortedFields = Object.keys(fields).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+        const sortedFields = Object.keys(fields).sort((a, b) => (
+          a.toLowerCase().localeCompare(b.toLowerCase())
+        ));
 
         sortedFields.forEach((field) => {
-          responseText += `\nNumber of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`;
+          const studentList = fields[field].join(', ');
+          responseText += `\nNumber of students in ${field}: ${fields[field].length}. List: ${studentList}`;
         });
 
         response.status(200).send(responseText);
